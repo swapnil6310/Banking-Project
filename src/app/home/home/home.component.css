@@ -1,0 +1,31 @@
+.back-img img{
+    width:100vw;
+    height:100vh;
+    
+}
+.card{
+    position: absolute;
+    top:25%;
+    margin-right:10rem;
+    /* background-color: #1832479d */
+    background-color: rgba(14, 48, 75, 0.897);;
+}
+.card2{
+    position: absolute;
+    top:58%;
+}
+.cmbutton{
+     background-color: rgba(7, 28, 43, 0.897); 
+    /* background-color:rgba(7, 28, 43, 0.897); */
+    color:white;
+    padding:.5rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    width:25rem;
+}
+
+    
+
+.cardbut button{
+  width:10rem;
+}

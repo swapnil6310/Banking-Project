@@ -1,0 +1,81 @@
+<div class="addButton">
+  <button type="button" class="btn btn-dark" (click)="openModel(null)">Add Customer</button>
+</div>
+<div class="searching">
+  <input type="text" placeholder="Search.." name="search" [(ngModel)]="searchText" />
+</div>
+<hr>
+<table class="table mx-auto">
+  <thead>
+    <tr>
+      <th *ngFor="let column of customerColumns">
+        <div class="d-flex">
+          <a (click)="sortedColumn(column)">{{column}}</a>
+
+          <div class="headerrow ps-3" (click)="sortedColumn(column)">
+            <div><i class="fa fa-caret-up d-block" [ngStyle]="{ color: isSort == 0 ? 'grey' : 'black' }"
+                style="font-size: 24px" style="font-size: 24px;height:15px"></i></div>
+            <div><i class="fa fa-caret-down d-block" [ngStyle]="{ color: isSort == 1 ? 'grey' : 'black' }"
+                style="font-size: 24px" style="font-size: 24px;height:15px"></i></div>
+
+          </div>
+        </div>
+      </th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="customerDetailData.length > 0">
+   
+    <tr
+      *ngFor="let customer of customerDetailData | searching: searchText | sorting :columnToBeSorted: isSort ; let i = index">
+   
+      <td>{{i+1}}</td>
+      <td>{{customer.customerName}}</td>
+      <td>{{customer.email}}</td>
+      <td>{{customer.contact}}</td>
+      <td>
+        <i class="fa fa-edit pe-3" style="font-size: 26px;color:rgb(224, 165, 3)" (click)="openModel(customer)"></i>
+        <i class="fa fa-trash ps-3" style="font-size: 26px;color:red" (click)="deleteDataFromApi(customer.customerId)"></i>
+      </td>
+    </tr>
+  </tbody>
+    <!-- <tbody *ngIf="customerDetailData.length == 0"> -->
+    <tbody *ngIf="(customerDetailData | searching: searchText)?.length==0">
+   
+      <td colspan="2"></td>
+    <td colspan="2"><h3 class="mt-3 mb-3">No Records Found !</h3></td>
+ 
+  </tbody>
+</table>
+
+<!-- <button class="px-2 h3 click">&laquo;</button> -->
+  
+  <!-- <ng-container *ngFor="let page of pageButtons;let i=index;let last=last">
+    <div class="pagination" *ngIf="i<=buttonAdd">
+      <button [ngClass]="(i==actBut) ? 'btn-change' : 'btn-default'" (click)="pageValue(page,i)">{{page}}</button>
+     
+    </div>
+    <div class="dotDesign" *ngIf="i>5">. . . . . . . . . </div>
+    <div class="pagination" *ngIf="last">
+      <button [ngClass]="(i==actBut) ? 'btn-change' : 'btn-default'" (click)="pageValue(page,i)">{{page}}</button>
+     
+    </div>
+  </ng-container> -->
+  
+<div class="pagebutton" *ngIf="(customerDetailData | searching: searchText)?.length>0">
+  
+  
+  <div class="pagination">
+    <button [ngClass]="(selectedPage==1) ? 'btn-change pointerNone' : 'btn-default'" (click)="pageValue(1)">First</button>
+  </div>
+  
+    <div class="pagination" *ngFor="let page of pageButtons">
+      <button [ngClass]="(page==selectedPage) ? 'btn-change' : 'btn-default'" (click)="pageValue(page)">{{page}}</button>
+    </div>
+  
+  <div class="pagination">
+    <button [ngClass]="(selectedPage==pages) ? 'btn-change pointerNone' : 'btn-default'" (click)="pageValue(pages)">Last</button>
+  </div>
+
+</div>
+

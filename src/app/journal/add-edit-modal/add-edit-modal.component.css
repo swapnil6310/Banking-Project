@@ -1,0 +1,30 @@
+.mainForm label{
+font-size: 18px;
+}
+.dropdown-toggle{
+    width:14.5rem;
+    background-color: white;
+    color:black;
+    padding:.3rem;
+    border-radius: 4px;
+}
+.typeOption{
+    width:14.5rem; 
+}
+.customerOptions{
+    width:14.5rem;
+    height:150px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+.arrow-down{
+    position: absolute;
+    margin-left: 13rem;
+    font-size: 22px;
+    top: 2.2rem;
+}
+/* .another{
+    position: absolute;
+    margin-left: -1.5rem;
+    font-size: 30px; 
+} */

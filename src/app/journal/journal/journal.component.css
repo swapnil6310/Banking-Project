@@ -1,0 +1,42 @@
+.addButton{
+    display:flex;
+    justify-content: end;
+    margin:2rem 3rem;
+}
+.addButton button{
+    font-size: 22px;
+}
+.table{
+    width:90%;
+}
+.headerrow{
+    margin-top: -.5rem;
+}
+.searching{
+    display: flex;
+    justify-content: center;
+  
+}
+.searching input{
+width:40%;
+padding:.4rem;
+border:3px solid black;
+font-size: 18px;
+}
+.inner-tbl{
+    margin:1rem 2rem;
+}
+.inner-tbl td{
+    
+    padding-right:.5rem;
+}
+.amount{
+    margin-top:2rem;
+}
+.emptyTd{
+   border-bottom: none;
+  
+}
+.emptyTd h5{
+    margin-top:1rem;
+ }

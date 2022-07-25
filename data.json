@@ -1,0 +1,267 @@
+{
+  "customer": [
+    {
+      "customerId": 1,
+      "customerName": "Swapnil Saraiya",
+      "email": "swapnilsaraiya01@gmail.com",
+      "contact": 8849106256,
+      "id": 1
+    },
+    {
+      "customerId": "",
+      "customerName": "Dhruvit makadia",
+      "email": "dhruvit@igeek.com",
+      "contact": 9786959649,
+      "id": 2
+    },
+    {
+      "customerId": "",
+      "customerName": "Chintesh Tamang",
+      "email": "chitesh@gmail.com",
+      "contact": 8969895495,
+      "id": 3
+    },
+    {
+      "customerId": "",
+      "customerName": "Tina Chaudhary",
+      "email": "tina@gmail.com",
+      "contact": 9090989787,
+      "id": 4
+    },
+    {
+      "customerId": "",
+      "customerName": "Abhishek Bathliwala",
+      "email": "abhishek@gmail.com",
+      "contact": 6759694538,
+      "id": 5
+    },
+    {
+      "customerId": "",
+      "customerName": "Farook Sheikh",
+      "email": "farook@gmail.com",
+      "contact": 8979657564,
+      "id": 6
+    },
+    {
+      "customerId": "",
+      "customerName": "Zeel Tandel",
+      "email": "zeel@gmail.com",
+      "contact": 9097675746,
+      "id": 7
+    },
+    {
+      "customerId": "",
+      "customerName": "Badal Patel",
+      "email": "badal@gmail.com",
+      "contact": 9897096060,
+      "id": 8
+    },
+    {
+      "customerId": "",
+      "customerName": "Aravind Kejrival",
+      "email": "araving@gmail.com",
+      "contact": 8679954584,
+      "id": 9
+    },
+    {
+      "customerId": "",
+      "customerName": "Eliana Dcruz",
+      "email": "elina@gmail.com",
+      "contact": 9454843748,
+      "id": 11
+    },
+    {
+      "customerId": "",
+      "customerName": "Dhruv Pandya",
+      "email": "dhruv @gmail.com",
+      "contact": 8548549960,
+      "id": 12
+    },
+    {
+      "customerId": "",
+      "customerName": "Ganesh Bhagwaan",
+      "email": "ganesh@gmail.com",
+      "contact": 9098767898,
+      "id": 13
+    },
+    {
+      "customerId": "",
+      "customerName": "Harsh Patel",
+      "email": "harsh@gmail.com",
+      "contact": 9800695944,
+      "id": 14
+    },
+    {
+      "customerId": "",
+      "customerName": "Henny Parmar",
+      "email": "henny@gmail.com",
+      "contact": 9899877667,
+      "id": 15
+    },
+    {
+      "customerId": null,
+      "customerName": "Imran Khan",
+      "email": "imaran @gmail.com",
+      "contact": 7789989890,
+      "id": 16
+    },
+    {
+      "customerId": null,
+      "customerName": "Irfan Khan",
+      "email": "irfan@gmail.com",
+      "contact": 7845675676,
+      "id": 17
+    },
+    {
+      "customerId": null,
+      "customerName": "Jenny Kotak",
+      "email": "jenny@gmail.com",
+      "contact": 6776567898,
+      "id": 18
+    },
+    {
+      "customerId": "",
+      "customerName": "Gamit Patel",
+      "email": "gamit@gmail.com",
+      "contact": 8659693498,
+      "id": 19
+    },
+    {
+      "customerId": "",
+      "customerName": "Bablu Pandey",
+      "email": "bablu@gmail.com",
+      "contact": 9968689790,
+      "id": 20
+    },
+    {
+      "customerId": "",
+      "customerName": "Meenakshi Desai",
+      "email": "meenakshi@gmail.com",
+      "contact": 9890899898,
+      "id": 21
+    },
+    {
+      "customerId": "",
+      "customerName": "Kailash Patel",
+      "email": "kailash@gmail.com",
+      "contact": 9978868790,
+      "id": 22
+    },
+    {
+      "customerId": "",
+      "customerName": "Lalit Pandey",
+      "email": "lalit@gmail.com",
+      "contact": 7980897080,
+      "id": 23
+    },
+    {
+      "customerId": "",
+      "customerName": "Lokesh Patel",
+      "email": "lokesh@gmail.com",
+      "contact": 9089797967,
+      "id": 24
+    },
+    {
+      "customerId": "",
+      "customerName": "Ozan Sheikh",
+      "email": "ozan@gmail.com",
+      "contact": 9890695899,
+      "id": 25
+    },
+    {
+      "customerId": "",
+      "customerName": "Pinkesh Patel",
+      "email": "pinkesh@gmail.com",
+      "contact": 7980707080,
+      "id": 26
+    },
+    {
+      "customerId": "",
+      "customerName": "Pritam Saraiya",
+      "email": "pritam@gmail.com",
+      "contact": 8945236720,
+      "id": 27
+    },
+    {
+      "customerId": "",
+      "customerName": "Priyesh Manghela",
+      "email": "priyesh@gmail.com",
+      "contact": 8935236340,
+      "id": 28
+    },
+    {
+      "customerId": "",
+      "customerName": "Rakesh Tandel",
+      "email": "rakesh@gmail.com",
+      "contact": 8976988920,
+      "id": 29
+    },
+    {
+      "customerId": "",
+      "customerName": "Sahil Patel",
+      "email": "sahil@gmail.com",
+      "contact": 9884653423,
+      "id": 30
+    },
+    {
+      "customerId": "",
+      "customerName": "Taksh Rathod",
+      "email": "taksh@gmail.com",
+      "contact": 9436274990,
+      "id": 31
+    },
+    {
+      "customerId": "",
+      "customerName": "Urmi Patel",
+      "email": "urmi@gmail.com",
+      "contact": 7846535280,
+      "id": 32
+    },
+    {
+      "customerId": "",
+      "customerName": "Urvika Tandel",
+      "email": "Urvika@gmail.com",
+      "contact": 9376523647,
+      "id": 33
+    },
+    {
+      "customerId": "",
+      "customerName": "Vruti Patel",
+      "email": "vruti@gmail.com",
+      "contact": 9273645644,
+      "id": 34
+    },
+    {
+      "customerId": "",
+      "customerName": "Vimmi Deshmukh",
+      "email": "vimmi@gmail.com",
+      "contact": 9077564533,
+      "id": 35
+    },
+    {
+      "customerId": "",
+      "customerName": "Yamini Desai",
+      "email": "yamini@gmail.com",
+      "contact": 8798573635,
+      "id": 36
+    }
+  ],
+  "journal": [
+    {
+      "date": "2022-07-08",
+      "type": "Expense",
+      "customer": "Swapnil saraiya",
+      "amount": 200,
+      "description": "any",
+      "id": 1
+    },
+    {
+      "date": "2022-07-08",
+      "type": "Income",
+      "customer": "Self",
+      "amount": 5000,
+      "description": "any",
+      "id": 2
+    }
+  ]
+}

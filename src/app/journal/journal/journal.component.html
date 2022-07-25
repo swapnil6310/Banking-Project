@@ -1,0 +1,61 @@
+<div class="addButton">
+  <button type="button" class="btn btn-dark" (click)="openModel()">
+    Transaction
+  </button>
+</div>
+<hr />
+
+<table class="table mx-auto">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Date</th>
+      <th>Transaction Detail</th>
+      <th>Description</th>
+      <th>Debit</th>
+      <th>Credit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transactionLog of transactionDetail; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ transactionLog.date }}</td>
+      <td>
+        {{ transactionLog.type }}
+    <tr>
+      <div class="inner-tbl">
+        <td>To A/c</td>
+        <td>{{ transactionLog.customer }} . . . .Dr</td>
+      </div>
+    </tr>
+    </td>
+    <td>{{ transactionLog.description }}</td>
+    <td>{{ transactionLog.amount }}</td>
+    <td>
+      <tr>
+        <div class="amount">
+          <td>{{ transactionLog.amount }}</td>
+        </div>
+      </tr>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="deleteDataFromApi(transactionLog.id)">Delete</button>
+    </td>
+    </tr>
+    <tr>
+      <td class="emptyTd" colspan="2"></td>
+
+      <td class="emptyTd">
+        <h5>Total</h5>
+      </td>
+      <td class="emptyTd"></td>
+      <td class="emptyTd">
+        <h5>{{ total }}</h5>
+      </td>
+      <td class="emptyTd">
+        <h5>{{ total }}</h5>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>

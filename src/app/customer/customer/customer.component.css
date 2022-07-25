@@ -1,0 +1,76 @@
+.addButton{
+    display:flex;
+    justify-content: end;
+    margin:2rem 3rem;
+}
+.addButton button{
+    font-size: 22px;
+}
+.table{
+    width:90%;
+}
+.headerrow{
+    margin-top: -.5rem;
+}
+.searching{
+    display: flex;
+    justify-content: center;
+  
+}
+.searching input{
+width:40%;
+padding:.4rem;
+border:3px solid black;
+font-size: 18px;
+}
+.pagebutton{
+    display:flex;
+    justify-content: center;
+}
+
+  .pagination {
+
+    float: left;
+    padding-top:.5rem;
+    text-decoration: none;
+    transition: background-color .3s;
+    margin:4px;
+   
+  }
+.pagination:hover{
+    cursor:pointer;
+}
+   
+.click{
+    border:none;
+    background: none;
+}
+ .btn-default {
+     text-decoration: none;
+     
+     font-size: 22px;
+    background-color: white;
+    color:black;
+    padding:7px 17px;
+    border:1px solid silver;
+    border-radius: 6px;
+}
+
+.btn-change {
+    text-decoration: none;
+       font-size: 22px;
+       padding:7px 17px;
+       border-radius: 6px;
+       background-color: rgb(40, 149, 252);
+       color:white;
+       border:none;
+       box-shadow: 2px 4px 5px 2px silver;
+}
+.dotDesign{
+    font-size: 35px;
+    margin-top: 14px;
+}
+
+.pointerNone{
+    cursor:not-allowed;
+}

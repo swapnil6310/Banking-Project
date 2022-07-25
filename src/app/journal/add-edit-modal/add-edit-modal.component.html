@@ -1,0 +1,116 @@
+<div class="modal-header">
+  <h2>Transaction Form</h2>
+  <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+</div>
+<div class="modal-body">
+  <form class="mainForm" [formGroup]="transactionForm" (ngSubmit)="submittedData()">
+    <div class="form-group pb-3 col-md-6">
+      <label class="pb-1">Date</label>
+      <input type="date" class="form-control" id="inputEmail" formControlName="date" />
+      <small class="text-danger" *ngIf="
+          !transactionForm.get('date')?.valid &&
+          !transactionForm.get('date')?.untouched
+        ">The Field is Required !</small>
+    </div>
+    <div class="form-group pb-3 dropdown">
+      <label>Type</label><br />
+      <input class="form-control dropdown-toggle " type="text" id="exampleFormControlInput1" placeholder="Select Type..." value="{{inputValueType}}"
+        data-bs-toggle="dropdown" aria-expanded="false" autocomplete="off" formControlName="type">
+        <i class="fa fa-angle-down arrow-down"></i>
+        <ul class="form-control dropdown-menu typeOption" aria-labelledby="dropdownMenuButton1">
+          <li class="dropdown-item" (click)="showOptionForType('Expense')">Expense</li>
+          <li class="dropdown-item" (click)="showOptionForType('Income')">Income</li>
+        </ul>
+        <small class="text-danger" *ngIf="
+          !transactionForm.get('type')?.valid &&
+          !transactionForm.get('type')?.untouched
+        ">The Field is Required !</small>
+    </div>
+
+    <div class="form-group pb-3 dropdown">
+      <label>Customer</label><br />
+      <input class="form-control dropdown-toggle " type="text" id="exampleFormControlInput1" placeholder="Select.."
+        value="{{inputValueCustomer}}" data-bs-toggle="dropdown" aria-expanded="false" autocomplete="off"
+        formControlName="customer">
+      <i class="fa fa-angle-down arrow-down"></i>
+      <!-- <i class="fa fa-caret-up another" *ngIf="option==false"></i> -->
+      <ul class="form-control dropdown-menu customerOptions" aria-labelledby="dropdownMenuButton1">
+        <li class="dropdown-item" (click)="showOptionForCustomer('Self')">Self</li>
+        <li class="dropdown-item" *ngFor="let customer of customerList"
+          (click)="showOptionForCustomer(customer.customerName)">
+          {{ customer.customerName }}</li>
+      </ul>
+      <small class="text-danger" *ngIf="
+      !transactionForm.get('customer')?.valid &&
+      !transactionForm.get('customer')?.untouched
+    ">The Field is Required !</small>
+    </div>
+
+    <!-- <div class="col-md-6 pb-3 wrapper" >
+      <label >Customer</label>
+     <select class="selectOpt" formControlName="customer">
+
+         <option class="opt">Choose...</option>
+         <option>Self</option>
+         <option *ngFor="let customer of customerList">{{customer.customerName}}</option>
+  
+     </select>
+      <small class="text-danger" *ngIf="
+          !transactionForm.get('customer')?.valid &&
+          !transactionForm.get('customer')?.untouched
+        ">The Field is Required !</small>
+    
+    </div> -->
+
+    <!-- <div class="form-group col-md-6 pb-3 wrapper" >
+      <label >Customer</label>
+      <select class="selopt" formControlName="customer">
+        <option selected>Choose...</option>
+        <option>Self</option>
+        <option *ngFor="let customer of customerList">
+          {{ customer.customerName }}
+        </option>
+        
+      </select>
+      <small class="text-danger" *ngIf="
+          !transactionForm.get('customer')?.valid &&
+          !transactionForm.get('customer')?.untouched
+        ">The Field is Required !</small>
+    </div> -->
+    <div class="form-group col-md-6 pb-3">
+      <label class="pb-1">Amount</label>
+      <input type="number" class="form-control" id="inputEmail4" formControlName="amount" />
+      <small class="text-danger" *ngIf="
+          !transactionForm.get('amount')?.valid &&
+          !transactionForm.get('amount')?.untouched
+        ">The Field is Required !</small>
+    </div>
+
+    <div class="form-group pb-3">
+      <label class="pb-1">Description</label>
+      <textarea class="form-control" id="inputEmail4" formControlName="description"></textarea>
+      <small class="text-danger" *ngIf="
+          !transactionForm.get('description')?.valid &&
+          !transactionForm.get('description')?.untouched
+        ">The Field is Required !</small>
+    </div>
+    <ul class="dropdown-menu scrollable-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li><a href="#">Action</a></li>
+      ..
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+    </ul>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" (click)="closeModal()">
+        close
+      </button>
+      <button type="submit" class="btn btn-success" [disabled]="!transactionForm.valid">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
